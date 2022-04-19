@@ -93,4 +93,98 @@
             </form>
         </section>
     </body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="header">
+            <h1 id="title">Coding Survey</h1>
+            <hr>
+            <p id="description">Thank you for taking your time partaking in this survey.</p>
+        </header>
+        <section>
+            <form id="survey-form">
+                <div id="input" class="box-style">
+                    <!--Personal Information-->
+                    <label for="name" id="name-label" class="font-bold">
+                        Name 
+                        <input id="name" type="text" required placeholder="Enter your name" class="input-syle">
+                    </label>
+                    <br>
+                    <label for="email" id="email-label" class="font-bold">
+                        Email
+                        <input id="email" type="email" required placeholder="Enter your email" class="input-syle">    
+                    </label>
+                    <br>
+                    <label for="number" id="number-label" class="font-bold">
+                        Age
+                        <input id="number" type="number" min="13" max="100" placeholder="Enter your age"  class="input-syle">
+                    </label>
+                    <br>
+                    <p>Gender</p>
+                    <div id="radio-btns">
+                        <label for="radio1">
+                            <input id="radio1" type="radio" name="gender" value="Male"> Male
+                        </label>
+                        <label for="radio2">
+                            <input id="radio2" type="radio" name="gender" value="Female"> Female
+                        </label>
+                        <label for="radio3">
+                            <input id="radio3" type="radio" name="gender" value="Other"> Other
+                        </label>
+                    </div>
+                    <br>
+                    <p>Occupation</p>
+                    <div>
+                        <select name="dropdown" class="dropdwn-style">
+                            <option disabled selected id="select-option">Select your occupation</option>
+                            <option value="student">Student</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="professor">Professor</option>
+                            <option value="employee">Employee</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <br>
+
+                    <!--Question-->
+                    <p>Reason for learning to code?</p>
+                    <div id="checkboxes">
+                        <label for="chckbx1">
+                            <input id="chckbx1" type="checkbox" name="chckbx" value="change-career"> To change career
+                        </label>
+                        <label for="chckbx2">
+                            <input id="chckbx2" type="checkbox" name="chckbx" value="start-freelancing"> To start freelancing
+                        </label>
+                        <label for="chckbx3">
+                            <input id="chckbx3" type="checkbox" name="chckbx" value="school-requirement"> School Requirement
+                        </label>
+                        <label for="chckbx4">
+                            <input id="chckbx4" type="checkbox" name="chckbx" value="hobby"> As a Hobby
+                        </label>
+                        <label for="chckbx5">
+                            <input id="chckbx5" type="checkbox" name="chckbx" value="Other"> Other: <input type="text" name="chckbx" id="other-option">
+                        </label>
+                    </div>
+                </div>
+
+                <!--Feedback-->
+                <div class="box-style">
+                    <label for="textarea" class="font-bold">
+                        Do you have any feedback?
+                        <textarea id="textarea" placeholder="Enter your feedback here..." minlength="5" maxlength="250"></textarea>
+                    </label>
+
+                    <!--Submit Button-->
+                    <div class="submit-div">
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                </div>
+                <br>
+            </form>
+        </section>
+    </body>
 </html>

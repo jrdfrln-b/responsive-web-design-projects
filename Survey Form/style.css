@@ -177,4 +177,175 @@ hr {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+    background: #E0EAFC;
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+}
+
+header {
+    background-color: #F6F8FF;
+    width: 600px;
+    padding: 25px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 8px rgb(240, 240, 240) inset;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    text-align: center
+}
+
+header h1 {
+    padding-bottom: 10px;
+}
+
+header p {
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.box-style {
+    font-family: 'Roboto';
+    background-color: #F6F8FF;
+    width: 600px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 8px rgb(240, 240, 240) inset;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.font-bold, #survey-form p {
+    font-weight: bold;
+}
+
+.input-syle {
+    display: block;
+    margin-top: 5px;
+    padding: 0.30rem;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: rgb(255, 255, 255);
+    -webkit-rtl-ordering: logical;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #858585;
+    border-image: initial;
+}
+
+.dropdwn-style {
+    margin-top: 5px;
+    padding: 0.30rem;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-appearance: textfield;
+    background-color: rgb(255, 255, 255);
+    -webkit-rtl-ordering: logical;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #858585;
+    border-image: initial;
+}
+
+textarea {
+    display: block;
+    font-family: 'Roboto';
+    margin-top: 5px;
+    padding: 0.6rem;
+    resize: vertical;
+    min-height: 120px;
+    border-radius: 5px;
+    width: 100%;
+    -webkit-appearance: textfield;
+    background-color: rgb(255, 255, 255);
+    -webkit-rtl-ordering: logical;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #858585;
+    border-image: initial;
+}
+
+textarea:focus, .input-syle:focus, .dropdwn-style:focus {
+    outline: 0;
+    box-shadow: 0px 0px 1px 2px #b8d2ff;
+}
+
+#select-option {
+    text-align: center;
+}
+
+#radio-btns, #checkboxes {
+    margin-top: 5px;
+}
+
+#other-option {
+    outline: 0;
+    background-color: #f6f8ff;
+    border-width: 0 0 1px;
+    border-color: black;
+    width: 100px;
+}
+
+label {
+    display: block;
+}
+
+.submit-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#submit:hover {
+    color: gray;
+}
+
+option {
+    font-size: 15px;
+}
+
+input[type=submit] {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background-color: #F6F8FF;
+    border: none;
+    text-decoration: none;
+    margin: 4px 2px;
+    margin-top: 25px;
+    margin-bottom: -20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+input[type=checkbox], input[type=radio] {
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }

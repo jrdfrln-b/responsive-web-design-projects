@@ -32,12 +32,20 @@ header {
 }
 
 header h1 {
+    display: inline-block;
     padding-bottom: 10px;
 }
 
 header p {
     font-style: italic;
     padding-top: 10px;
+}
+
+img {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 9%;
+    margin-left: 10px;
 }
 
 .box-style {

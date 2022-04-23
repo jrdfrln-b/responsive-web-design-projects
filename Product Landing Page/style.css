@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Varela Round';
+    background-color: rgb(230, 230, 230);
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Navigation Bar */
+
+#nav-bar {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0px 25px;
+    width: 100%;
+}
+
+#nav-bar a {
+    text-decoration: none;
+}
+
+.nav-list {
+    list-style-type: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.nav-link {
+    font-family: 'Varela Round';
+    color: black;
+}
+
+.nav-link:hover {
+    color: rgb(135, 135, 135);
+}
+
+#header-img {
+    height: 35px;
+}
+
+#sub-nav {
+    font-family: 'Varela Round';
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#sub-nav:hover {
+    background-color: rgb(135, 135, 135);
+    color: white;
+}
+
+/* Top Section */
+
+#top-page {
+    display: flex;
+    background-color: #202020;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    padding: 0px 200px;
+}
+
+#top-page-info h2 {
+    font-size: 80px;
+    line-height: 75px;
+    width: 50%
+}
+
+#top-page-info p {
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
+    width: 60%;
+    text-align: justify;
+}
+
+#readmore-btn {
+    font-family: 'Varela Round';
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: #202020;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#top-page-img {
+    vertical-align: top;
+    float: right;
+}
+
+/* About Section */
+
+#about-page {
+    padding: 75px 30px;
+    height: 100vh;
+}
+
+#about-page h2 {
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.cards {
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#card1 {
+    font-family: 'Varela Round';
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    width: 75%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#card1 h3 {
+    font-size: 30px;
+    padding: 80px 50px 20px 50px;
+}
+
+#card1 p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px 50px 80px 50px;
+}
+
+.card-style {
+    font-family: 'Varela Round';
+    background-color: #202020;
+    color: white;
+    padding: 14px 28px;
+    width: 75%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-style h3 {
+    font-size: 30px;
+    padding: 80px 50px 20px 50px;
+}
+
+.card-style p {
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px 50px 80px 50px;
+}
+
+/* Video Section */
+
+#video-page {
+    background-color: #202020;
+    padding: 75px 30px;
+    height: 100vh;
+}
+
+#video-page h2 {
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
+#vid-container {
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Plans Section */
+
+#plans-page {
+    padding: 75px 30px;
+    height: 100vh;
+}
+
+
+#plans-page h2 {
+    margin-left: 10px;
+    font-size: 50px;
+}
+
+.plans-card {
+    font-family: 'Varela Round';
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    width: 75%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.plans-card h3 {
+    text-align: center;
+    font-size: 30px;
+    padding: 80px 50px 5px 50px;
+}
+
+.plans-card ul {
+    font-size: 16px;
+    text-align: justify;
+    padding: 50px;
+    line-height: 30px;
+}
+
+.plans-card p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.plans-btn {
+    display: block;
+    text-align: center;
+    width: px;
+    font-family: 'Varela Round';
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 300px;
+}
+
+/* Newsletter Section */
+
+#subscribe {
+    height: 10vh;
+    background-color: #202020;
+}
+
+#subscribe p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email {
+    font-family: 'Varela Round';
+    margin: auto 3px;
+    padding: 0.30rem;
+    width: 20%;
+    border-radius: 2px;
+    border-style: none;
+}
+
+input[type=submit] {
+    font-family: 'Varela Round';
+    font-weight: bold;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    padding: 0.30rem;
+    text-decoration: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: rgb(135, 135, 135);
+    color: white;
+    font-weight: normal;
+}
+
+/* Mobile Styles */
+
+@media (max-width: 980px) {
+    /* Top Section */
+
+    #top-page {
+        padding: 0px 80px;
+    }
+
+    #top-page-info h2 {
+        font-size: 40px;
+        line-height: 45px;
+        width: 50%
+    }
+    
+    #top-page-info p {
+        font-size: 15px;
+        margin-left: 5px;
+        margin-top: 15px;
+        width: 60%;
+        text-align: justify;
+    }
+    
+    #readmore-btn {
+        font-family: 'Varela Round';
+        border: 2px solid white;
+        border-radius: 15px;
+        background-color: #202020;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    /* About Section */
+
+    #about-page {
+        height: 250vh;
+    }
+
+    .cards {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* Video Section */
+
+    #vid-container {
+        max-width: 980px;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+    }
+
+    #video {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    /* Plans Section */
+
+    #plans-page {
+        height: 215vh;
+    }
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <nav id="navbar">
+            <header>
+                HTML Documentation
+            </header>
+            <ul>
+                <li>
+                    <a href="#introduction" class="nav-link">Introduction</a>
+                </li>
+                <li>
+                    <a href="#html_documents" class="nav-link">HTML Documents</a>
+                </li>
+                <li>
+                    <a href="#html_headings" class="nav-link">HTML Headings</a>
+                </li>
+                <li>
+                    <a href="#html_paragraphs" class="nav-link">HTML Paragraphs</a>
+                </li>
+                <li>
+                    <a href="#html_links" class="nav-link">HTML Links</a>
+                </li>
+                <li>
+                    <a href="#html_images" class="nav-link">HTML Images</a>
+                </li>
+                <li>
+                    <a href="#reference" class="nav-link">Reference</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>
+                    Introduction
+                </header>
+                <p><strong>What is HTML?</strong></p>
+                <p>
+                    <ul>
+                        <li>HTML (stands for Hypertext Markup Language) is a computer language that makes up most web pages and online applications.</li>
+                        <li>HTML is the standard markup language for creating Web pages</li>
+                        <li>HTML describes the structure of a Web page</li>
+                    </ul>
+                </p>
+                <p>
+                    HTML is commonly used for:
+                    <ul>
+                        <li><strong>Web development.</strong> Developers use HTML code to design how a browser displays web page elements, such as text, hyperlinks, and media files.</li>
+                        <li><strong>Internet navigation.</strong> Users can easily navigate and insert links between related pages and websites as HTML is heavily used to embed hyperlinks.</li>
+                        <li><strong>Web documentation.</strong> HTML makes it possible to organize and format documents, similarly to Microsoft Word.</li>
+                    </ul>
+                </p>
+            </section>
+            <hr>
+            <section class="main-section" id="html_documents">
+                <header>
+                    HTML Documents
+                </header>
+                <p>
+                    All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html></code>.
+                    The HTML document itself begins with <code>&lt;html></code> and ends with <code>&lt;/html></code>.
+                    The visible part of the HTML document is between <code>&lt;body></code> and <code>&lt;/body></code>.
+                </p>
+                <p>
+                    Example:
+                    <pre>
+                        <code>
+                            &lt;!DOCTYPE html>
+                            &lt;html>
+                            &lt;body>
+
+                            &lt;h1>My First Heading&lt;/h1>
+                            &lt;p>My first paragraph.&lt;/p>
+
+                            &lt;/body>
+                            &lt;/html>
+                        </code>
+                    </pre>
+                </p>
+            </section>
+            <hr>
+            <section class="main-section" id="html_headings">
+                <header>
+                    HTML Headings
+                </header>
+                <p>
+                    HTML headings are defined with the <code>&lt;h1></code> to <code>&lt;h6></code> tags.
+                    <code>&lt;h1></code> defines the most important heading. <code>&lt;h6></code> defines the least important heading: 
+                </p>
+                <p>
+                    Example:
+                    <pre>
+                        <code>
+                            &lt;h1>This is heading 1&lt;/h1>
+                            &lt;h2>This is heading 2&lt;/h2>
+                            &lt;h3>This is heading 3&lt;/h3>
+                        </code>
+                    </pre>
+                </p>
+            </section>
+            <hr>
+            <section class="main-section" id="html_paragraphs">
+                <header>
+                    HTML Paragraphs
+                </header>
+                <p>
+                    HTML paragraphs are defined with the <code>&lt;p></code> tag:
+                </p>
+                <p>
+                    Example:
+                    <pre>
+                        <code>
+                            &lt;p>This is a paragraph.&lt;/p>
+                            &lt;p>This is another paragraph.&lt;/p>
+                        </code>
+                    </pre>
+                </p>
+            </section>
+            <hr>
+            <section class="main-section" id="html_links">
+                <header>
+                    HTML Links
+                </header>
+                <p>
+                    HTML links are defined with the <code>&lt;a></code> tag:
+                </p>
+                <p>
+                    Example:
+                    <pre>
+                        <code>
+                            &lt;a href="https://www.w3schools.com">This is a link&lt;/a>
+                        </code>
+                    </pre>
+                </p>
+                <p>
+                    The link's destination is specified in the <code>href</code> attribute. 
+                    Attributes are used to provide additional information about HTML elements.
+                    You will learn more about attributes in a later chapter.
+                </p>
+            </section>
+            <hr>
+            <section class="main-section" id="html_images">
+                <header>
+                    HTML Images
+                </header>
+                <p>
+                    HTML images are defined with the <code>&lt;img></code> tag.
+                    The source file (src), alternative text (alt), width, and height are provided as attributes:
+                </p>
+                <p>
+                    Example:
+                    <pre>
+                        <code>
+                            &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142">
+                        </code>
+                    </pre>
+                </p>
+            </section>
+            <hr>
+            <section class="main-section" id="reference">
+                <header>
+                    Reference
+                </header>
+                <p>
+                    All the documentation in this page is taken from <a href="https://www.w3schools.com/html/html_basic.asp">W3Schools</a>
+                </p>
+            </section>
+        </main>
+    </body>
+</html>

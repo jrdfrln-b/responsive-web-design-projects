@@ -1,3 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +24,54 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    display: block;
+    font-family: 'Open Sans', Arial, sans-serif;
     color: black;
-    background: rgb(249,249,249);
-    background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(235,235,235,1) 100%); 
-    margin: 10px;
+    background: radial-gradient(circle, rgba(249,249,249,1) 0%, rgba(235,235,235,1) 100%);
+    margin: 8px;
+    line-height: 1.5;
+}
+
+section {
+    display: block;
 }
 
 #navbar {
-   position: fixed;
-   height: 100%;
-   width: 300px;
-   min-width: 290px;
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border: none;
+    border-right: solid;
+    border-color:rgba(0, 0, 0, 0.3);
+}
+
+#navbar ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li {
+    color: #4d4e53;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    border: none;
+}
+
+#navbar header {
+    font-size: 25px;
+    padding-bottom: 10px;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+    border: none;
 }
 
 nav {
@@ -32,23 +87,75 @@ nav {
     color: black;
 }
 
-#navbar header {
-    font-size: 30px;
-    margin-bottom: 10px;
-}
-
-hr {
-    margin: 5px 0px 5px 0px;
+.nav-link:hover {
+    background-color: rgba(200, 200, 200, 0.555);
 }
 
 #main-doc {
     position: absolute;
-    margin-left: 310px;
+    margin-top: -10px;
+    margin-left: 292px;
     padding: 20px;
-    margin-bottom: 110px;
+    background-color: white;
+}
+
+#main-doc ul {
+    margin-left: 50px;
+}
+
+#main-doc header {
+    font-size: 30px;
+}
+
+p {
+    margin: 20px 0px;
+}
+
+hr {
+    margin: 30px 0px 15px 0px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 pre {
     padding-top: 10.5px;
-    border: 1px solid;
+    border-radius: 5px;
+    background: rgb(247, 247, 247); 
+}
+
+#main-doc header {
+    text-align: left;
+}
+
+@media (max-width: 980px) {
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 20px;
+        border: none;
+    }
+
+    #navbar ul {
+        height: 207px;
+    }
+
+    #navbar header {
+        text-align: center;
+        border: none;
+        border-bottom: solid;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
+
+    #main-doc {
+        margin-left: -8px;
+        margin-top: 267px;
+        border: none;
+        border-top: solid;
+        border-color: rgba(0, 0, 0, 0.3);
+    }
 }
